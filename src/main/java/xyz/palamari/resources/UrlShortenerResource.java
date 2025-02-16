@@ -23,7 +23,7 @@ public class UrlShortenerResource {
     @GET
     @Path("{redirectCode}")
     @Transactional
-    public Response redirect(UUID redirectCode) {
+    public Response redirect(String redirectCode) {
         RedirectUrl redirectUrl = RedirectUrl.findById(redirectCode);
         if (redirectUrl != null) {
             return Response.temporaryRedirect(redirectUrl.redirectUrl).build();

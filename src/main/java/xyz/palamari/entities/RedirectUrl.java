@@ -10,7 +10,7 @@ public class RedirectUrl extends PanacheEntityBase {
 
     @Id
     @Column(name = "urlid", nullable = false, updatable = false)
-    public UUID id;
+    public String id;
 
     public URI redirectUrl;
 
@@ -19,6 +19,6 @@ public class RedirectUrl extends PanacheEntityBase {
     public RedirectUser redirectUser;
 
     public RedirectUrl() {
-        this.id = UUID.randomUUID();
+        this.id = UUID.randomUUID().toString().substring(0, 8);
     }
 }
