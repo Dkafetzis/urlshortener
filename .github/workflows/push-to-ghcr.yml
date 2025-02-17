@@ -1,0 +1,30 @@
+---
+name: "Build and publish a Docker image to ghcr.io"
+"on":
+  push:
+    branches:
+      - "production"
+jobs:
+  docker_publish:
+    runs-on: "ubuntu-24.04"
+    steps:
+      - name: "Setup JDK"
+        uses: "actions/setup-java@v4"
+        with:
+          distribution: "temurin"
+          java-version: "21"
+      - name: "Checkout the production branch"
+        uses: "actions/checkout@v4"
+        with:
+          ref: "production"
+      - name: "Package the application"
+        run: |
+          ./mvnw package
+      - name: "Build and publish a Docker image for ${{ github.repository }}"
+        uses: "macbre/push-to-ghcr@v14"
+        with:
+          image_name: "dkafetzis/urlshortener"
+          github_token: "${{ secrets.GHCR_TOKEN }}"
+          dockerfile: "src/docker/Dockerfile.jvm"
+          image_tag: "latest"
+
