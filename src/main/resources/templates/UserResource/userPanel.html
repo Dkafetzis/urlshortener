@@ -10,19 +10,27 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
-    <title>Something failed!</title>
-    <style>
-        body {
-            text-align: center;
-            background-color: #222;
-            color: #fff;
-        }
-    </style>
+    <title>Link Shortener</title>
+    <meta charset="UTF-8">
+    <title>User Panel</title>
 </head>
 <body>
-    <h1>( 0 _ 0 )</h1>
-    <h1>Something failed!</h1>
+    <h1>User Panel</h1>
     <br>
-    <p>Either the username is not correct or the link is not valid please go back and try again.</p>
+    <p>Welcome {username}!</p>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>URL</th>
+            <th>Hits</th>
+        </tr>
+        {#for url in urls}
+            <tr>
+                <td><a href="{url.id}">{url.id}</a></td>
+                <td>{url.redirectUrl}</td>
+                <td>{url.hits ?: 0}</td>
+            </tr>
+        {/for}
+    </table>
 </body>
 </html>

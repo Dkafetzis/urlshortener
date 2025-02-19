@@ -1,6 +1,7 @@
 package xyz.palamari.resources;
 
 import io.quarkus.qute.CheckedTemplate;
+import io.quarkus.qute.Template;
 import io.quarkus.qute.TemplateInstance;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
@@ -20,11 +21,12 @@ public class UrlShortenerResource {
     @Inject
     UrlService urlService;
 
-    @CheckedTemplate
-    public static class Templates {
-        public static native TemplateInstance redirect(String urlid);
+    @Inject
+    Template error;
 
-        public static native TemplateInstance error();
+    @CheckedTemplate
+    public static class UrlShortenerTemplates {
+        public static native TemplateInstance redirect(String urlid);
     }
 
     @GET
@@ -33,6 +35,8 @@ public class UrlShortenerResource {
     public Response redirect(String redirectCode) {
         RedirectUrl redirectUrl = RedirectUrl.findById(redirectCode);
         if (redirectUrl != null) {
+            redirectUrl.hits++;
+            redirectUrl.persist();
             return Response.temporaryRedirect(redirectUrl.redirectUrl).build();
         } else {
             return Response.status(404).build();
@@ -57,9 +61,9 @@ public class UrlShortenerResource {
     public TemplateInstance createRedirect(@BeanParam RedirectFormRequest redirectFormRequest) {
         String urlId = urlService.createRedirectUrl(redirectFormRequest.username(), redirectFormRequest.redirectUrl());
         if (urlId != null) {
-            return Templates.redirect(urlId);
+            return UrlShortenerTemplates.redirect(urlId);
         } else {
-            return Templates.error();
+            return error.instance();
         }
     }
 }

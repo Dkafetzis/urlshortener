@@ -14,7 +14,7 @@ public class RedirectUser extends PanacheEntityBase {
 
     public String username;
 
-    @OneToMany(mappedBy = "redirectUser", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "redirectUser", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     public List<RedirectUrl> redirectUrls;
 
     public RedirectUser() {

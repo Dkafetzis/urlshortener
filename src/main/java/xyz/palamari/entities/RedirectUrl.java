@@ -14,11 +14,14 @@ public class RedirectUrl extends PanacheEntityBase {
 
     public URI redirectUrl;
 
+    public int hits;
+
     @ManyToOne
     @JoinColumn(name = "userid")
     public RedirectUser redirectUser;
 
     public RedirectUrl() {
         this.id = UUID.randomUUID().toString().substring(0, 8);
+        this.hits = 0;
     }
 }
