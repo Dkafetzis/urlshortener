@@ -25,6 +25,6 @@ jobs:
         with:
           image_name: "dkafetzis/urlshortener"
           github_token: "${{ secrets.GHCR_TOKEN }}"
-          dockerfile: "src/docker/Dockerfile.jvm"
+          dockerfile: "src/main/docker/Dockerfile.jvm"
           image_tag: "latest"
 
