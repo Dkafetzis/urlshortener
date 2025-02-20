@@ -19,12 +19,12 @@ jobs:
           ref: "production"
       - name: "Package the application"
         run: |
-          ./mvnw package
+          ./mvnw package -Pnative
       - name: "Build and publish a Docker image for ${{ github.repository }}"
         uses: "macbre/push-to-ghcr@v14"
         with:
           image_name: "dkafetzis/urlshortener"
           github_token: "${{ secrets.GHCR_TOKEN }}"
-          dockerfile: "src/main/docker/Dockerfile.jvm"
+          dockerfile: "src/main/docker/Dockerfile.native-micro"
           image_tag: "latest"
 
