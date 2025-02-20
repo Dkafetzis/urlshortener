@@ -1,0 +1,632 @@
+[
+{
+  "name":"[Lcom.fasterxml.jackson.databind.deser.BeanDeserializerModifier;"
+},
+{
+  "name":"[Lcom.fasterxml.jackson.databind.deser.Deserializers;"
+},
+{
+  "name":"[Lcom.fasterxml.jackson.databind.deser.KeyDeserializers;"
+},
+{
+  "name":"[Lcom.fasterxml.jackson.databind.deser.ValueInstantiators;"
+},
+{
+  "name":"[Lcom.fasterxml.jackson.databind.ser.BeanSerializerModifier;"
+},
+{
+  "name":"[Lcom.fasterxml.jackson.databind.ser.Serializers;"
+},
+{
+  "name":"[Lio.agroal.pool.ConnectionHandler;"
+},
+{
+  "name":"[Ljava.lang.String;"
+},
+{
+  "name":"[Ljava.util.List;"
+},
+{
+  "name":"[Ljava.util.UUID;"
+},
+{
+  "name":"[Ljava.util.function.Supplier;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.AutoFlushEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.DeleteEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.DirtyCheckEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.EvictEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.FlushEntityEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.FlushEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.InitializeCollectionEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.LoadEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.LockEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.MergeEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.PersistEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.PostDeleteEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.PostInsertEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.PostLoadEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.PostUpdateEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.PostUpsertEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.PreLoadEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.RefreshEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.ReplicateEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.ResolveNaturalIdEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.event.spi.SaveOrUpdateEventListener;"
+},
+{
+  "name":"[Lorg.hibernate.query.hql.spi.DotIdentifierConsumer;"
+},
+{
+  "name":"[Lorg.hibernate.query.hql.spi.SqmCreationProcessingState;"
+},
+{
+  "name":"[Lorg.hibernate.query.sqm.spi.ParameterDeclarationContext;"
+},
+{
+  "name":"[Lorg.hibernate.query.sqm.sql.FromClauseIndex;"
+},
+{
+  "name":"[Lorg.hibernate.query.sqm.tree.select.SqmQueryPart;"
+},
+{
+  "name":"[Lorg.hibernate.sql.ast.Clause;"
+},
+{
+  "name":"[Lorg.hibernate.sql.ast.spi.SqlAstProcessingState;"
+},
+{
+  "name":"[Lorg.hibernate.sql.ast.tree.Statement;"
+},
+{
+  "name":"[Lorg.hibernate.sql.ast.tree.select.QueryPart;"
+},
+{
+  "name":"[Lorg.hibernate.sql.results.jdbc.spi.JdbcValuesSourceProcessingState;"
+},
+{
+  "name":"com.arjuna.ats.arjuna.common.CoordinatorEnvironmentBean",
+  "allDeclaredFields":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getCheckedActionFactory","parameterTypes":[] }, {"name":"getCheckedActionFactoryClassName","parameterTypes":[] }, {"name":"getCommunicationStore","parameterTypes":[] }, {"name":"getDefaultTimeout","parameterTypes":[] }, {"name":"getDynamic1PC","parameterTypes":[] }, {"name":"getMaxTwoPhaseCommitThreads","parameterTypes":[] }, {"name":"getTxReaperCancelFailWaitPeriod","parameterTypes":[] }, {"name":"getTxReaperCancelWaitPeriod","parameterTypes":[] }, {"name":"getTxReaperMode","parameterTypes":[] }, {"name":"getTxReaperTimeout","parameterTypes":[] }, {"name":"getTxReaperTraceGracePeriod","parameterTypes":[] }, {"name":"getTxReaperTraceInterval","parameterTypes":[] }, {"name":"getTxReaperZombieMax","parameterTypes":[] }, {"name":"isAllowCheckedActionFactoryOverride","parameterTypes":[] }, {"name":"isAlternativeRecordOrdering","parameterTypes":[] }, {"name":"isAsyncAfterSynchronization","parameterTypes":[] }, {"name":"isAsyncBeforeSynchronization","parameterTypes":[] }, {"name":"isAsyncCommit","parameterTypes":[] }, {"name":"isAsyncPrepare","parameterTypes":[] }, {"name":"isAsyncRollback","parameterTypes":[] }, {"name":"isBeforeCompletionWhenRollbackOnly","parameterTypes":[] }, {"name":"isClassicPrepare","parameterTypes":[] }, {"name":"isCommitOnePhase","parameterTypes":[] }, {"name":"isDynamic1PC","parameterTypes":[] }, {"name":"isEnableStatistics","parameterTypes":[] }, {"name":"isFinalizeBasicActions","parameterTypes":[] }, {"name":"isMaintainHeuristics","parameterTypes":[] }, {"name":"isReadonlyOptimisation","parameterTypes":[] }, {"name":"isSharedTransactionLog","parameterTypes":[] }, {"name":"isStartDisabled","parameterTypes":[] }, {"name":"isTransactionStatusManagerEnable","parameterTypes":[] }, {"name":"isWriteOptimisation","parameterTypes":[] }, {"name":"setAllowCheckedActionFactoryOverride","parameterTypes":["boolean"] }, {"name":"setAlternativeRecordOrdering","parameterTypes":["boolean"] }, {"name":"setAsyncAfterSynchronization","parameterTypes":["boolean"] }, {"name":"setAsyncBeforeSynchronization","parameterTypes":["boolean"] }, {"name":"setAsyncCommit","parameterTypes":["boolean"] }, {"name":"setAsyncPrepare","parameterTypes":["boolean"] }, {"name":"setAsyncRollback","parameterTypes":["boolean"] }, {"name":"setBeforeCompletionWhenRollbackOnly","parameterTypes":["boolean"] }, {"name":"setCheckedActionFactory","parameterTypes":["com.arjuna.ats.arjuna.coordinator.CheckedActionFactory"] }, {"name":"setCheckedActionFactoryClassName","parameterTypes":["java.lang.String"] }, {"name":"setClassicPrepare","parameterTypes":["boolean"] }, {"name":"setCommitOnePhase","parameterTypes":["boolean"] }, {"name":"setCommunicationStore","parameterTypes":["java.lang.String"] }, {"name":"setDefaultTimeout","parameterTypes":["int"] }, {"name":"setDynamic1PC","parameterTypes":["boolean"] }, {"name":"setEnableStatistics","parameterTypes":["boolean"] }, {"name":"setFinalizeBasicActions","parameterTypes":["boolean"] }, {"name":"setMaintainHeuristics","parameterTypes":["boolean"] }, {"name":"setMaxTwoPhaseCommitThreads","parameterTypes":["int"] }, {"name":"setReadonlyOptimisation","parameterTypes":["boolean"] }, {"name":"setSharedTransactionLog","parameterTypes":["boolean"] }, {"name":"setStartDisabled","parameterTypes":["boolean"] }, {"name":"setTransactionLog","parameterTypes":["boolean"] }, {"name":"setTransactionStatusManagerEnable","parameterTypes":["boolean"] }, {"name":"setTxReaperCancelFailWaitPeriod","parameterTypes":["long"] }, {"name":"setTxReaperCancelWaitPeriod","parameterTypes":["long"] }, {"name":"setTxReaperMode","parameterTypes":["java.lang.String"] }, {"name":"setTxReaperTimeout","parameterTypes":["long"] }, {"name":"setTxReaperTraceGracePeriod","parameterTypes":["long"] }, {"name":"setTxReaperTraceInterval","parameterTypes":["long"] }, {"name":"setTxReaperZombieMax","parameterTypes":["int"] }, {"name":"setWriteOptimisation","parameterTypes":["boolean"] }]
+},
+{
+  "name":"com.arjuna.ats.arjuna.common.CoreEnvironmentBean",
+  "allDeclaredFields":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getNodeIdentifier","parameterTypes":[] }, {"name":"getPid","parameterTypes":[] }, {"name":"getProcessImplementation","parameterTypes":[] }, {"name":"getProcessImplementationClassName","parameterTypes":[] }, {"name":"getSocketProcessIdMaxPorts","parameterTypes":[] }, {"name":"getSocketProcessIdPort","parameterTypes":[] }, {"name":"getTimeoutFactor","parameterTypes":[] }, {"name":"getVarDir","parameterTypes":[] }, {"name":"isAllowMultipleLastResources","parameterTypes":[] }, {"name":"isDisableMultipleLastResourcesWarning","parameterTypes":[] }, {"name":"setAllowMultipleLastResources","parameterTypes":["boolean"] }, {"name":"setDisableMultipleLastResourcesWarning","parameterTypes":["boolean"] }, {"name":"setNODE_NAME_SIZE","parameterTypes":["int"] }, {"name":"setNodeIdentifier","parameterTypes":["java.lang.String"] }, {"name":"setPid","parameterTypes":["int"] }, {"name":"setProcessImplementation","parameterTypes":["com.arjuna.ats.arjuna.utils.Process"] }, {"name":"setProcessImplementationClassName","parameterTypes":["java.lang.String"] }, {"name":"setSocketProcessIdMaxPorts","parameterTypes":["int"] }, {"name":"setSocketProcessIdPort","parameterTypes":["int"] }, {"name":"setTimeoutFactor","parameterTypes":["int"] }, {"name":"setVarDir","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"com.arjuna.ats.arjuna.common.ObjectStoreEnvironmentBean",
+  "allDeclaredFields":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getCacheStoreHash","parameterTypes":[] }, {"name":"getCacheStoreRemovedItems","parameterTypes":[] }, {"name":"getCacheStoreScanPeriod","parameterTypes":[] }, {"name":"getCacheStoreSize","parameterTypes":[] }, {"name":"getCacheStoreWorkItems","parameterTypes":[] }, {"name":"getCreateTable","parameterTypes":[] }, {"name":"getDropTable","parameterTypes":[] }, {"name":"getExposeAllLogRecordsAsMBeans","parameterTypes":[] }, {"name":"getHashedDirectories","parameterTypes":[] }, {"name":"getHierarchyRetry","parameterTypes":[] }, {"name":"getHierarchyTimeout","parameterTypes":[] }, {"name":"getJdbcAccess","parameterTypes":[] }, {"name":"getJmxToolingMBeanName","parameterTypes":[] }, {"name":"getLocalOSRoot","parameterTypes":[] }, {"name":"getObjectStoreDir","parameterTypes":[] }, {"name":"getObjectStoreType","parameterTypes":[] }, {"name":"getPurgeTime","parameterTypes":[] }, {"name":"getShare","parameterTypes":[] }, {"name":"getTablePrefix","parameterTypes":[] }, {"name":"getTxLogSize","parameterTypes":[] }, {"name":"isCacheStoreSync","parameterTypes":[] }, {"name":"isCreateTable","parameterTypes":[] }, {"name":"isDropTable","parameterTypes":[] }, {"name":"isExposeAllLogRecordsAsMBeans","parameterTypes":[] }, {"name":"isIgnoreMBeanHeuristics","parameterTypes":[] }, {"name":"isObjectStoreSync","parameterTypes":[] }, {"name":"isScanZeroLengthFiles","parameterTypes":[] }, {"name":"isSynchronousRemoval","parameterTypes":[] }, {"name":"isTransactionSync","parameterTypes":[] }, {"name":"isVolatileStoreSupportAllObjUids","parameterTypes":[] }, {"name":"setAndroidDirCheck","parameterTypes":["boolean"] }, {"name":"setCacheStoreHash","parameterTypes":["int"] }, {"name":"setCacheStoreRemovedItems","parameterTypes":["int"] }, {"name":"setCacheStoreScanPeriod","parameterTypes":["int"] }, {"name":"setCacheStoreSize","parameterTypes":["int"] }, {"name":"setCacheStoreSync","parameterTypes":["boolean"] }, {"name":"setCacheStoreWorkItems","parameterTypes":["int"] }, {"name":"setCreateTable","parameterTypes":["boolean"] }, {"name":"setDropTable","parameterTypes":["boolean"] }, {"name":"setExposeAllLogRecordsAsMBeans","parameterTypes":["boolean"] }, {"name":"setHashedDirectories","parameterTypes":["int"] }, {"name":"setHierarchyRetry","parameterTypes":["int"] }, {"name":"setHierarchyTimeout","parameterTypes":["int"] }, {"name":"setIgnoreMBeanHeuristics","parameterTypes":["boolean"] }, {"name":"setJdbcAccess","parameterTypes":["java.lang.String"] }, {"name":"setJdbcStoreDataSource","parameterTypes":["javax.sql.DataSource"] }, {"name":"setJmxToolingMBeanName","parameterTypes":["java.lang.String"] }, {"name":"setLocalOSRoot","parameterTypes":["java.lang.String"] }, {"name":"setObjectStoreDir","parameterTypes":["java.lang.String"] }, {"name":"setObjectStoreSync","parameterTypes":["boolean"] }, {"name":"setObjectStoreType","parameterTypes":["java.lang.String"] }, {"name":"setPurgeTime","parameterTypes":["long"] }, {"name":"setScanZeroLengthFiles","parameterTypes":["boolean"] }, {"name":"setShare","parameterTypes":["int"] }, {"name":"setSynchronousRemoval","parameterTypes":["boolean"] }, {"name":"setTablePrefix","parameterTypes":["java.lang.String"] }, {"name":"setTransactionSync","parameterTypes":["boolean"] }, {"name":"setTxLogSize","parameterTypes":["long"] }, {"name":"setVolatileStoreSupportAllObjUids","parameterTypes":["boolean"] }]
+},
+{
+  "name":"com.arjuna.ats.arjuna.common.RecoveryEnvironmentBean",
+  "allDeclaredFields":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getExpiryScanInterval","parameterTypes":[] }, {"name":"getExpiryScannerClassNames","parameterTypes":[] }, {"name":"getExpiryScanners","parameterTypes":[] }, {"name":"getPeriodicRecoveryInitilizationOffset","parameterTypes":[] }, {"name":"getPeriodicRecoveryPeriod","parameterTypes":[] }, {"name":"getRecoveryActivatorClassNames","parameterTypes":[] }, {"name":"getRecoveryActivators","parameterTypes":[] }, {"name":"getRecoveryAddress","parameterTypes":[] }, {"name":"getRecoveryBackoffPeriod","parameterTypes":[] }, {"name":"getRecoveryModuleClassNames","parameterTypes":[] }, {"name":"getRecoveryModules","parameterTypes":[] }, {"name":"getRecoveryPort","parameterTypes":[] }, {"name":"getTransactionStatusManagerAddress","parameterTypes":[] }, {"name":"getTransactionStatusManagerExpiryTime","parameterTypes":[] }, {"name":"getTransactionStatusManagerPort","parameterTypes":[] }, {"name":"isRecoveryListener","parameterTypes":[] }, {"name":"isTimeoutSocket","parameterTypes":[] }, {"name":"isWaitForWorkLeftToDo","parameterTypes":[] }, {"name":"setExpiryScanInterval","parameterTypes":["int"] }, {"name":"setExpiryScannerClassNames","parameterTypes":["java.util.List"] }, {"name":"setExpiryScanners","parameterTypes":["java.util.List"] }, {"name":"setPeriodicRecoveryInitilizationOffset","parameterTypes":["int"] }, {"name":"setPeriodicRecoveryPeriod","parameterTypes":["int"] }, {"name":"setRecoveryActivatorClassNames","parameterTypes":["java.util.List"] }, {"name":"setRecoveryActivators","parameterTypes":["java.util.List"] }, {"name":"setRecoveryAddress","parameterTypes":["java.lang.String"] }, {"name":"setRecoveryBackoffPeriod","parameterTypes":["int"] }, {"name":"setRecoveryListener","parameterTypes":["boolean"] }, {"name":"setRecoveryModuleClassNames","parameterTypes":["java.util.List"] }, {"name":"setRecoveryModules","parameterTypes":["java.util.List"] }, {"name":"setRecoveryPort","parameterTypes":["int"] }, {"name":"setTimeoutSocket","parameterTypes":["boolean"] }, {"name":"setTransactionStatusManagerAddress","parameterTypes":["java.lang.String"] }, {"name":"setTransactionStatusManagerExpiryTime","parameterTypes":["int"] }, {"name":"setTransactionStatusManagerPort","parameterTypes":["int"] }, {"name":"setWaitForWorkLeftToDo","parameterTypes":["boolean"] }]
+},
+{
+  "name":"com.arjuna.ats.internal.arjuna.coordinator.CheckedActionFactoryImple",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.arjuna.ats.internal.arjuna.utils.SocketProcessId",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionManagerImple",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.arjuna.ats.jta.common.JTAEnvironmentBean",
+  "allDeclaredFields":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getAsyncCommitPoolSize","parameterTypes":[] }, {"name":"getCommitMarkableResourceJNDINames","parameterTypes":[] }, {"name":"getCommitMarkableResourceRecordDeleteBatchSize","parameterTypes":[] }, {"name":"getCommitMarkableResourceRecordDeleteBatchSizeMap","parameterTypes":[] }, {"name":"getCommitMarkableResourceTableNameMap","parameterTypes":[] }, {"name":"getLastResourceOptimisationInterface","parameterTypes":[] }, {"name":"getLastResourceOptimisationInterfaceClassName","parameterTypes":[] }, {"name":"getOrphanSafetyInterval","parameterTypes":[] }, {"name":"getPerformImmediateCleanupOfCommitMarkableResourceBranchesMap","parameterTypes":[] }, {"name":"getTransactionManager","parameterTypes":[] }, {"name":"getTransactionManagerClassName","parameterTypes":[] }, {"name":"getTransactionManagerJNDIContext","parameterTypes":[] }, {"name":"getTransactionSynchronizationRegistry","parameterTypes":[] }, {"name":"getTransactionSynchronizationRegistryClassName","parameterTypes":[] }, {"name":"getTransactionSynchronizationRegistryJNDIContext","parameterTypes":[] }, {"name":"getUserTransaction","parameterTypes":[] }, {"name":"getUserTransactionClassName","parameterTypes":[] }, {"name":"getUserTransactionJNDIContext","parameterTypes":[] }, {"name":"getUserTransactionOperationsProviderClassName","parameterTypes":[] }, {"name":"getXaRecoveryNodes","parameterTypes":[] }, {"name":"getXaResourceIsSameRMClassNames","parameterTypes":[] }, {"name":"getXaResourceMapClassNames","parameterTypes":[] }, {"name":"getXaResourceMaps","parameterTypes":[] }, {"name":"getXaResourceOrphanFilterClassNames","parameterTypes":[] }, {"name":"getXaResourceOrphanFilters","parameterTypes":[] }, {"name":"getXaResourceRecordWrappingPluginClassName","parameterTypes":[] }, {"name":"getXaResourceRecoveries","parameterTypes":[] }, {"name":"getXaResourceRecoveryClassNames","parameterTypes":[] }, {"name":"isNotifyCommitMarkableResourceRecoveryModuleOfCompleteBranches","parameterTypes":[] }, {"name":"isPerformImmediateCleanupOfCommitMarkableResourceBranches","parameterTypes":[] }, {"name":"isStrictJTA12DuplicateXAENDPROTOErr","parameterTypes":[] }, {"name":"isSupportSubtransactions","parameterTypes":[] }, {"name":"isTransactionToThreadListenersEnabled","parameterTypes":[] }, {"name":"isXaAssumeRecoveryComplete","parameterTypes":[] }, {"name":"isXaTransactionTimeoutEnabled","parameterTypes":[] }, {"name":"setAsyncCommitPoolSize","parameterTypes":["int"] }, {"name":"setCommitMarkableResourceJNDINames","parameterTypes":["java.util.List"] }, {"name":"setCommitMarkableResourceRecordDeleteBatchSize","parameterTypes":["int"] }, {"name":"setCommitMarkableResourceRecordDeleteBatchSizeMap","parameterTypes":["java.util.Map"] }, {"name":"setCommitMarkableResourceTableName","parameterTypes":["java.lang.String"] }, {"name":"setCommitMarkableResourceTableNameMap","parameterTypes":["java.util.Map"] }, {"name":"setDefaultTransactionOperationsProviderClassName","parameterTypes":["java.lang.String"] }, {"name":"setLastResourceOptimisationInterface","parameterTypes":["java.lang.Class"] }, {"name":"setLastResourceOptimisationInterfaceClassName","parameterTypes":["java.lang.String"] }, {"name":"setNotifyCommitMarkableResourceRecoveryModuleOfCompleteBranches","parameterTypes":["boolean"] }, {"name":"setOrphanSafetyInterval","parameterTypes":["int"] }, {"name":"setPerformImmediateCleanupOfCommitMarkableResourceBranches","parameterTypes":["boolean"] }, {"name":"setPerformImmediateCleanupOfCommitMarkableResourceBranchesMap","parameterTypes":["java.util.Map"] }, {"name":"setStrictJTA12DuplicateXAENDPROTOErr","parameterTypes":["boolean"] }, {"name":"setSupportSubtransactions","parameterTypes":["boolean"] }, {"name":"setTransactionManager","parameterTypes":["jakarta.transaction.TransactionManager"] }, {"name":"setTransactionManagerClassName","parameterTypes":["java.lang.String"] }, {"name":"setTransactionManagerJNDIContext","parameterTypes":["java.lang.String"] }, {"name":"setTransactionSynchronizationRegistry","parameterTypes":["jakarta.transaction.TransactionSynchronizationRegistry"] }, {"name":"setTransactionSynchronizationRegistryClassName","parameterTypes":["java.lang.String"] }, {"name":"setTransactionSynchronizationRegistryJNDIContext","parameterTypes":["java.lang.String"] }, {"name":"setTransactionToThreadListenersEnabled","parameterTypes":["boolean"] }, {"name":"setUserTransaction","parameterTypes":["jakarta.transaction.UserTransaction"] }, {"name":"setUserTransactionClassName","parameterTypes":["java.lang.String"] }, {"name":"setUserTransactionJNDIContext","parameterTypes":["java.lang.String"] }, {"name":"setUserTransactionOperationsProvider","parameterTypes":["org.jboss.tm.usertx.UserTransactionOperationsProvider"] }, {"name":"setUserTransactionOperationsProviderClassName","parameterTypes":["java.lang.String"] }, {"name":"setXaAssumeRecoveryComplete","parameterTypes":["boolean"] }, {"name":"setXaRecoveryNodes","parameterTypes":["java.util.List"] }, {"name":"setXaResourceIsSameRMClassNames","parameterTypes":["java.util.List"] }, {"name":"setXaResourceMapClassNames","parameterTypes":["java.util.List"] }, {"name":"setXaResourceMaps","parameterTypes":["java.util.List"] }, {"name":"setXaResourceOrphanFilterClassNames","parameterTypes":["java.util.List"] }, {"name":"setXaResourceOrphanFilters","parameterTypes":["java.util.List"] }, {"name":"setXaResourceRecordWrappingPlugin","parameterTypes":["com.arjuna.ats.internal.jta.resources.arjunacore.XAResourceRecordWrappingPlugin"] }, {"name":"setXaResourceRecordWrappingPluginClassName","parameterTypes":["java.lang.String"] }, {"name":"setXaResourceRecoveries","parameterTypes":["java.util.List"] }, {"name":"setXaResourceRecoveryClassNames","parameterTypes":["java.util.List"] }, {"name":"setXaTransactionTimeoutEnabled","parameterTypes":["boolean"] }]
+},
+{
+  "name":"com.arjuna.ats.jta.resources.LastResourceCommitOptimisation"
+},
+{
+  "name":"com.fasterxml.jackson.databind.ObjectMapper"
+},
+{
+  "name":"com.fasterxml.jackson.databind.ext.Java7SupportImpl",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.fasterxml.jackson.dataformat.xml.XmlMapper"
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.BLCHeader$DrainStatusRef",
+  "fields":[{"name":"drainStatus"}]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.BaseMpscLinkedArrayQueueColdProducerFields",
+  "fields":[{"name":"producerLimit"}]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.BaseMpscLinkedArrayQueueConsumerFields",
+  "fields":[{"name":"consumerIndex"}]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.BaseMpscLinkedArrayQueueProducerFields",
+  "fields":[{"name":"producerIndex"}]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.BoundedLocalCache",
+  "fields":[{"name":"refreshes"}]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.PS",
+  "fields":[{"name":"key"}, {"name":"value"}]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.PSW",
+  "fields":[{"name":"writeTime"}]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.PSWMS",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.SSMSA",
+  "fields":[{"name":"FACTORY"}]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.StripedBuffer",
+  "fields":[{"name":"tableBusy"}]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.UnboundedLocalCache",
+  "fields":[{"name":"refreshes"}]
+},
+{
+  "name":"com.sun.crypto.provider.HmacCore$HmacSHA256",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.PBKDF2Core$HmacSHA1",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.PBKDF2Core$HmacSHA224",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.PBKDF2Core$HmacSHA256",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.PBKDF2Core$HmacSHA384",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.PBKDF2Core$HmacSHA512",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"io.agroal.pool.ConnectionHandler",
+  "fields":[{"name":"state"}]
+},
+{
+  "name":"io.agroal.pool.util.AutoCloseableElement",
+  "fields":[{"name":"nextElement"}]
+},
+{
+  "name":"java.beans.ConstructorProperties"
+},
+{
+  "name":"java.lang.Class",
+  "methods":[{"name":"getRecordComponents","parameterTypes":[] }]
+},
+{
+  "name":"java.lang.Comparable",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.lang.Object",
+  "methods":[{"name":"equals","parameterTypes":["java.lang.Object"] }, {"name":"hashCode","parameterTypes":[] }]
+},
+{
+  "name":"java.lang.Record",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true
+},
+{
+  "name":"java.lang.SecurityManager",
+  "methods":[{"name":"checkPermission","parameterTypes":["java.security.Permission"] }]
+},
+{
+  "name":"java.lang.System",
+  "methods":[{"name":"getSecurityManager","parameterTypes":[] }]
+},
+{
+  "name":"java.lang.Thread",
+  "fields":[{"name":"threadLocalRandomProbe"}]
+},
+{
+  "name":"java.lang.reflect.RecordComponent",
+  "methods":[{"name":"getAccessor","parameterTypes":[] }, {"name":"getName","parameterTypes":[] }, {"name":"getType","parameterTypes":[] }]
+},
+{
+  "name":"java.net.URI"
+},
+{
+  "name":"java.security.AccessController",
+  "methods":[{"name":"doPrivileged","parameterTypes":["java.security.PrivilegedExceptionAction"] }]
+},
+{
+  "name":"java.sql.Date"
+},
+{
+  "name":"java.sql.Types",
+  "allPublicFields":true
+},
+{
+  "name":"java.util.concurrent.ForkJoinTask",
+  "fields":[{"name":"aux"}, {"name":"status"}]
+},
+{
+  "name":"java.util.concurrent.atomic.AtomicBoolean",
+  "fields":[{"name":"value"}]
+},
+{
+  "name":"java.util.concurrent.atomic.AtomicReference",
+  "fields":[{"name":"value"}]
+},
+{
+  "name":"java.util.concurrent.atomic.Striped64",
+  "fields":[{"name":"base"}, {"name":"cellsBusy"}]
+},
+{
+  "name":"java.util.concurrent.atomic.Striped64$Cell",
+  "fields":[{"name":"value"}]
+},
+{
+  "name":"javax.crac.Resource"
+},
+{
+  "name":"javax.xml.datatype.XMLGregorianCalendar"
+},
+{
+  "name":"jdk.crac.Resource"
+},
+{
+  "name":"jdk.internal.misc.Unsafe"
+},
+{
+  "name":"org.flywaydb.core.api.migration.baseline.BaselineMigrationConfigurationExtension",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getBaselineMigrationPrefix","parameterTypes":[] }, {"name":"setBaselineMigrationPrefix","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"org.flywaydb.core.extensibility.ConfigurationExtension",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.flywaydb.core.extensibility.Plugin",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.flywaydb.core.internal.command.clean.CleanModeConfigurationExtension",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getClean","parameterTypes":[] }, {"name":"setClean","parameterTypes":["org.flywaydb.core.internal.command.clean.CleanModel"] }]
+},
+{
+  "name":"org.flywaydb.core.internal.command.clean.CleanModel",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true
+},
+{
+  "name":"org.flywaydb.core.internal.command.clean.SchemaModel",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true
+},
+{
+  "name":"org.flywaydb.core.internal.configuration.extensions.DeployScriptFilenameConfigurationExtension",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getScriptFilename","parameterTypes":[] }, {"name":"setScriptFilename","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"org.flywaydb.core.internal.configuration.extensions.PrepareScriptFilenameConfigurationExtension",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getScriptFilename","parameterTypes":[] }, {"name":"setScriptFilename","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"org.flywaydb.core.internal.logging.slf4j.Slf4jLogCreator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.flywaydb.core.internal.proprietaryStubs.LicensingConfigurationExtensionStub",
+  "allDeclaredFields":true
+},
+{
+  "name":"org.flywaydb.core.internal.proprietaryStubs.PATTokenConfigurationExtensionStub",
+  "allDeclaredFields":true
+},
+{
+  "name":"org.flywaydb.core.internal.publishing.PublishingConfigurationExtension",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"isCheckDriftOnMigrate","parameterTypes":[] }, {"name":"isPublishResult","parameterTypes":[] }, {"name":"setCheckDriftOnMigrate","parameterTypes":["boolean"] }, {"name":"setPublishResult","parameterTypes":["boolean"] }]
+},
+{
+  "name":"org.flywaydb.database.postgresql.PostgreSQLConfigurationExtension",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getTransactional","parameterTypes":[] }, {"name":"isTransactionalLock","parameterTypes":[] }, {"name":"setTransactional","parameterTypes":["org.flywaydb.database.postgresql.TransactionalModel"] }, {"name":"setTransactionalLock","parameterTypes":["boolean"] }]
+},
+{
+  "name":"org.flywaydb.database.postgresql.TransactionalModel",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true
+},
+{
+  "name":"org.hibernate.boot.cfgxml.internal.CfgXmlAccessServiceImpl",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.boot.model.relational.ColumnOrderingStrategyStandard",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.bytecode.enhance.spi.EnhancementInfo",
+  "methods":[{"name":"value","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.cache.internal.EnabledCaching",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.dialect.PostgreSQLInetJdbcType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.dialect.PostgreSQLIntervalSecondJdbcType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.dialect.PostgreSQLJsonPGObjectJsonbType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.dialect.PostgreSQLStructPGObjectJdbcType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.engine.config.internal.ConfigurationServiceImpl",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.engine.jdbc.batch.internal.BatchBuilderImpl",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.engine.jdbc.dialect.internal.DialectResolverSet",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.engine.jdbc.internal.JdbcServicesImpl",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.engine.jdbc.mutation.internal.StandardMutationExecutorService",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.engine.jdbc.spi.SqlStatementLogger",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.engine.query.internal.NativeQueryInterpreterStandardImpl",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.event.spi.EventType",
+  "allDeclaredFields":true
+},
+{
+  "name":"org.hibernate.id.Assigned",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.id.factory.internal.StandardIdentifierGeneratorFactory",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.loader.ast.internal.StandardBatchLoaderFactory",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.persister.collection.OneToManyPersister",
+  "methods":[{"name":"<init>","parameterTypes":["org.hibernate.mapping.Collection","org.hibernate.cache.spi.access.CollectionDataAccess","org.hibernate.metamodel.spi.RuntimeModelCreationContext"] }]
+},
+{
+  "name":"org.hibernate.persister.entity.SingleTableEntityPersister",
+  "methods":[{"name":"<init>","parameterTypes":["org.hibernate.mapping.PersistentClass","org.hibernate.cache.spi.access.EntityDataAccess","org.hibernate.cache.spi.access.NaturalIdDataAccess","org.hibernate.metamodel.spi.RuntimeModelCreationContext"] }]
+},
+{
+  "name":"org.hibernate.persister.internal.PersisterFactoryImpl",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.persister.internal.StandardPersisterClassResolver",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.property.access.internal.PropertyAccessStrategyResolverStandardImpl",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl",
+  "queryAllPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.service.internal.SessionFactoryServiceRegistryFactoryImpl",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.sql.ast.internal.ParameterMarkerStrategyStandard",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.sql.results.jdbc.internal.JdbcValuesMappingProducerProviderStandard",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.stat.internal.StatisticsImpl",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.hibernate.type.SqlTypes",
+  "allPublicFields":true
+},
+{
+  "name":"org.infinispan.quarkus.hibernate.cache.QuarkusInfinispanRegionFactory",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.postgresql.Driver",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.postgresql.core.QueryExecutorCloseAction",
+  "fields":[{"name":"pgStream"}]
+},
+{
+  "name":"org.postgresql.jdbc.PgConnection",
+  "methods":[{"name":"getSchema","parameterTypes":[] }]
+},
+{
+  "name":"org.postgresql.jdbc.PgStatement",
+  "fields":[{"name":"cancelTimerTask"}, {"name":"isClosed"}, {"name":"statementState"}]
+},
+{
+  "name":"org.slf4j.Logger"
+},
+{
+  "name":"org.slf4j.impl.StaticLoggerBinder"
+},
+{
+  "name":"org.slf4j.spi.SLF4JServiceProvider"
+},
+{
+  "name":"sun.security.provider.MD5",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.provider.NativePRNG",
+  "methods":[{"name":"<init>","parameterTypes":["java.security.SecureRandomParameters"] }]
+},
+{
+  "name":"sun.security.provider.SHA",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.provider.SHA2$SHA224",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.provider.SHA2$SHA256",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.provider.SHA5$SHA384",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.provider.SHA5$SHA512",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"xyz.palamari.DTOs.AddUserRequest",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.String"] }, {"name":"username","parameterTypes":[] }]
+},
+{
+  "name":"xyz.palamari.DTOs.RedirectPostRequest",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.String","java.net.URI"] }, {"name":"redirectUrl","parameterTypes":[] }, {"name":"username","parameterTypes":[] }]
+},
+{
+  "name":"xyz.palamari.entities.RedirectUrl",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"equals","parameterTypes":["java.lang.Object"] }, {"name":"setHits","parameterTypes":["int"] }, {"name":"setId","parameterTypes":["java.lang.String"] }, {"name":"setRedirectUrl","parameterTypes":["java.net.URI"] }, {"name":"setRedirectUser","parameterTypes":["xyz.palamari.entities.RedirectUser"] }]
+},
+{
+  "name":"xyz.palamari.entities.RedirectUser",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"equals","parameterTypes":["java.lang.Object"] }, {"name":"setId","parameterTypes":["java.util.UUID"] }, {"name":"setRedirectUrls","parameterTypes":["java.util.List"] }, {"name":"setUsername","parameterTypes":["java.lang.String"] }]
+}
+]
