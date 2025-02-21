@@ -26,7 +26,9 @@ public class RedirectUser extends PanacheEntityBase {
     @Override
     public boolean equals(Object o) {
         if (!(o instanceof RedirectUser that)) return false;
-        return Objects.equals(id, that.id) && Objects.equals(username, that.username) && Objects.equals(redirectUrls, that.redirectUrls);
+        return Objects.equals(id, that.id)
+                && Objects.equals(username, that.username)
+                && Objects.equals(redirectUrls, that.redirectUrls);
     }
 
     @Override

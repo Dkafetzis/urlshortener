@@ -44,14 +44,17 @@ public class UserResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @Transactional
     public Response addUser(AddUserRequest addUserRequest) {
-        RedirectUser existingUser = RedirectUser.find("username", addUserRequest.username()).firstResult();
+        RedirectUser existingUser =
+                RedirectUser.find("username", addUserRequest.username()).firstResult();
         if (existingUser != null) {
             return Response.status(Response.Status.CONFLICT).build();
         } else {
             RedirectUser redirectUser = new RedirectUser();
             redirectUser.username = addUserRequest.username();
             redirectUser.persist();
-            return Response.ok(redirectUser.id + " " + redirectUser.username).status(Response.Status.CREATED).build();
+            return Response.ok(redirectUser.id + " " + redirectUser.username)
+                    .status(Response.Status.CREATED)
+                    .build();
         }
     }
 }

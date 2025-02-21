@@ -1,24 +1,22 @@
+import static io.restassured.RestAssured.given;
+
 import io.quarkus.test.junit.QuarkusIntegrationTest;
 import jakarta.json.Json;
 import jakarta.json.JsonObject;
 import org.junit.jupiter.api.Test;
 
-import static io.restassured.RestAssured.given;
-
 @QuarkusIntegrationTest
 public class NativeAgentProfileIT {
 
-
-    //Run this test to make sure that native image works and to generate the needed json files for native profile creation
+    // Run this test to make sure that native image works and to generate the needed json files for native profile
+    // creation
 
     @Test
     public void testAddUser() {
-        JsonObject addUserJson = Json.createObjectBuilder()
-                .add("username", "testuser")
-                .build();
+        JsonObject addUserJson =
+                Json.createObjectBuilder().add("username", "testuser").build();
 
-        given()
-                .contentType("application/json")
+        given().contentType("application/json")
                 .body(addUserJson.toString())
                 .when()
                 .post("/users")
@@ -30,13 +28,11 @@ public class NativeAgentProfileIT {
                 .add("redirectUrl", "http://locahost:1234")
                 .build();
 
-        given()
-                .contentType("application/json")
+        given().contentType("application/json")
                 .body(addURL.toString())
                 .when()
                 .post()
                 .then()
                 .statusCode(200);
-
     }
 }

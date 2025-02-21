@@ -3,8 +3,6 @@ package xyz.palamari.services;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.transaction.Transactional;
 import java.net.URI;
-
-import xyz.palamari.DTOs.RedirectDeleteRequest;
 import xyz.palamari.entities.RedirectUrl;
 import xyz.palamari.entities.RedirectUser;
 
@@ -15,10 +13,11 @@ public class UrlService {
     public String createRedirectUrl(String username, URI redirectUrl) {
         RedirectUser redirectUser = RedirectUser.find("username", username).firstResult();
         if (redirectUser != null) {
-            RedirectUrl existingUrl = RedirectUrl.find("redirectUrl", redirectUrl).firstResult();
+            RedirectUrl existingUrl =
+                    RedirectUrl.find("redirectUrl", redirectUrl).firstResult();
             if (existingUrl != null) {
                 return existingUrl.id;
-            }else {
+            } else {
                 RedirectUrl url = new RedirectUrl();
                 url.redirectUser = redirectUser;
                 url.redirectUrl = redirectUrl;
