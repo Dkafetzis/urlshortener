@@ -6,18 +6,23 @@
     <br>
     <p>Welcome {username}!</p>
     <table>
-    <tr>
-        <th>ID</th>
-        <th>URL</th>
-        <th>Hits</th>
-    </tr>
-    {#for url in urls}
-        <tr>
-            <td><a href="{url.id}" hx-boost="false">{url.id}</a></td>
-            <td>{url.redirectUrl}</td>
-            <td>{url.hits ?: 0}</td>
-        </tr>
-    {/for}
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>URL</th>
+                <th>Hits</th>
+            </tr>
+        </thead>
+        <tbody hx-confirm="Are you sure?" hx-target="closest tr" hx-swap="outerHTML">
+            {#for url in urls}
+                <tr>
+                    <td><a href="{url.id}" hx-boost="false">{url.id}</a></td>
+                    <td>{url.redirectUrl}</td>
+                    <td>{url.hits ?: 0}</td>
+                    <td><a hx-delete="/delete/{username}/{url.id}" hx-boost="false">Delete</a></td>
+                </tr>
+            {/for}
+        </tbody>
     </table>
     <br>
     <a href="/" class="button">Back</a>

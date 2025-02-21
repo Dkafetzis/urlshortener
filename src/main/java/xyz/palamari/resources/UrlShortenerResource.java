@@ -9,6 +9,7 @@ import jakarta.transaction.Transactional;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+import xyz.palamari.DTOs.RedirectDeleteRequest;
 import xyz.palamari.DTOs.RedirectFormRequest;
 import xyz.palamari.DTOs.RedirectPostRequest;
 import xyz.palamari.entities.RedirectUrl;
@@ -65,5 +66,20 @@ public class UrlShortenerResource {
         } else {
             return error.instance();
         }
+    }
+
+    @DELETE
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response deleteRedirect(RedirectDeleteRequest redirectDeleteRequest) {
+        urlService.deleteRedirectUrl(redirectDeleteRequest.username(), redirectDeleteRequest.urlid());
+        return Response.ok().build();
+    }
+
+    @DELETE
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    @Path("/delete/{username}/{urlid}")
+    public Response deleteRedirect(String username, String urlid) {
+        urlService.deleteRedirectUrl(username, urlid);
+        return Response.ok().build();
     }
 }
