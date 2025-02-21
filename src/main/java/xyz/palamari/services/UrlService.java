@@ -13,13 +13,18 @@ public class UrlService {
     public String createRedirectUrl(String username, URI redirectUrl) {
         RedirectUser redirectUser = RedirectUser.find("username", username).firstResult();
         if (redirectUser != null) {
-            RedirectUrl url = new RedirectUrl();
-            url.redirectUser = redirectUser;
-            url.redirectUrl = redirectUrl;
-            url.persist();
-            redirectUser.redirectUrls.add(url);
-            redirectUser.persist();
-            return url.id;
+            RedirectUrl existingUrl = RedirectUrl.find("redirectUrl", redirectUrl).firstResult();
+            if (existingUrl != null) {
+                return existingUrl.id;
+            }else {
+                RedirectUrl url = new RedirectUrl();
+                url.redirectUser = redirectUser;
+                url.redirectUrl = redirectUrl;
+                url.persist();
+                redirectUser.redirectUrls.add(url);
+                redirectUser.persist();
+                return url.id;
+            }
         } else {
             return null;
         }
