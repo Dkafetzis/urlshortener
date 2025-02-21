@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 {#include header /}
-<body>
+<body hx-boost="true">
     <h1>User Panel</h1>
     <br>
     <p>Welcome {username}!</p>
     <table>
+    <tr>
+        <th>ID</th>
+        <th>URL</th>
+        <th>Hits</th>
+    </tr>
+    {#for url in urls}
         <tr>
-            <th>ID</th>
-            <th>URL</th>
-            <th>Hits</th>
+            <td><a href="{url.id}" hx-boost="false">{url.id}</a></td>
+            <td>{url.redirectUrl}</td>
+            <td>{url.hits ?: 0}</td>
         </tr>
-        {#for url in urls}
-            <tr>
-                <td><a href="{url.id}">{url.id}</a></td>
-                <td>{url.redirectUrl}</td>
-                <td>{url.hits ?: 0}</td>
-            </tr>
-        {/for}
+    {/for}
     </table>
+    <br>
+    <a href="/" class="button">Back</a>
 </body>
 </html>

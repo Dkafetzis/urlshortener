@@ -69,6 +69,25 @@
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-web-dependency-locator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars.npm</groupId>
+            <artifactId>htmx.org</artifactId>
+            <version>2.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars.npm</groupId>
+            <artifactId>hyperscript.org</artifactId>
+            <version>0.9.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars.bower</groupId>
+            <artifactId>svg-loaders</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
             <artifactId>quarkus-junit5</artifactId>
             <scope>test</scope>
         </dependency>
@@ -139,10 +158,8 @@
                 <version>${spotless.version}</version>
                 <configuration>
                     <java>
-                        <removeUnusedImports>
-                        </removeUnusedImports>
-                        <palantirJavaFormat>
-                        </palantirJavaFormat>
+                        <removeUnusedImports></removeUnusedImports>
+                        <palantirJavaFormat></palantirJavaFormat>
                     </java>
                 </configuration>
             </plugin>

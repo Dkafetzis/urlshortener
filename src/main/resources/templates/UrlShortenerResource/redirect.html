@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 {#include header /}
-<body>
+<body hx-boost="true">
     <h1>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</h1>
     <h1>Success!!</h1>
     <p>Generated link code is <b>{urlid}</b></p>
-    <p>The full url is: <a id="fullurl" href="/{urlid}">loading...</a></p>
+    <p>The full url is: <a id="fullurl" href="/{urlid}" hx-boost="false">loading...</a></p>
+    <br>
+    <a href="/" class="button">Back</a>
+    <script>
+        const urlid = "{urlid}";
+        document.getElementById("fullurl").innerHTML = window.location.origin + "/" + urlid;
+    </script>
 </body>
-<script>
-    const urlid = "{urlid}";
-    document.getElementById("fullurl").innerHTML = window.location.origin + "/" + urlid;
-</script>
 </html>
