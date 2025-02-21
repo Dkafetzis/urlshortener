@@ -47,6 +47,6 @@ public class UserResource {
         RedirectUser redirectUser = new RedirectUser();
         redirectUser.username = addUserRequest.username();
         redirectUser.persist();
-        return Response.ok(redirectUser.id + " " + redirectUser.username).build();
+        return Response.ok(redirectUser.id + " " + redirectUser.username).status(Response.Status.CREATED).build();
     }
 }

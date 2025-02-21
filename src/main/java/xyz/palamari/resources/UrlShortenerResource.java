@@ -39,7 +39,7 @@ public class UrlShortenerResource {
             redirectUrl.persist();
             return Response.temporaryRedirect(redirectUrl.redirectUrl).build();
         } else {
-            return Response.status(404).build();
+            return Response.status(Response.Status.NOT_FOUND).build();
         }
     }
 
@@ -48,9 +48,9 @@ public class UrlShortenerResource {
     public Response createRedirect(RedirectPostRequest redirectPostRequest) {
         String urlId = urlService.createRedirectUrl(redirectPostRequest.username(), redirectPostRequest.redirectUrl());
         if (urlId != null) {
-            return Response.ok(urlId).build();
+            return Response.ok(urlId).status(Response.Status.CREATED).build();
         } else {
-            return Response.status(404).build();
+            return Response.status(Response.Status.NOT_FOUND).build();
         }
     }
 
