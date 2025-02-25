@@ -3,6 +3,7 @@ import static io.restassured.RestAssured.given;
 import io.quarkus.test.junit.QuarkusIntegrationTest;
 import jakarta.json.Json;
 import jakarta.json.JsonObject;
+import jakarta.ws.rs.core.Response;
 import org.junit.jupiter.api.Test;
 
 @QuarkusIntegrationTest
@@ -21,7 +22,7 @@ public class NativeAgentProfileIT {
                 .when()
                 .post("/users")
                 .then()
-                .statusCode(200);
+                .statusCode(Response.Status.CREATED.getStatusCode());
 
         JsonObject addURL = Json.createObjectBuilder()
                 .add("username", "testuser")
@@ -33,6 +34,6 @@ public class NativeAgentProfileIT {
                 .when()
                 .post()
                 .then()
-                .statusCode(200);
+                .statusCode(Response.Status.CREATED.getStatusCode());
     }
 }
