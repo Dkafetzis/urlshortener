@@ -158,8 +158,8 @@
                 <version>${spotless.version}</version>
                 <configuration>
                     <java>
-                        <removeUnusedImports></removeUnusedImports>
-                        <palantirJavaFormat></palantirJavaFormat>
+                        <removeUnusedImports/>
+                        <palantirJavaFormat/>
                     </java>
                 </configuration>
             </plugin>
