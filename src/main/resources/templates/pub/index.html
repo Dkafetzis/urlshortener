@@ -2,24 +2,27 @@
 <html lang="en">
 {#include header /}
 <body hx-boost="true">
-    <h1>Link Shortener</h1>
+
+    <h1><i class="fas fa-link icon"></i> Link Shortener</h1>
+
     <form action="/" method="post">
-        <label id="username"> Username:
-            <input type="text" name="username">
+        <label for="username"><i class="fas fa-user icon"></i> Username:
+            <input type="text" name="username" id="username" placeholder="Enter your username" required />
         </label>
-        <br><br>
-        <label id="redirectUrl"> URL:
-            <input type="text" name="redirectUrl">
+        <label for="redirectUrl"><i class="fas fa-link icon"></i> URL:
+            <input type="text" name="redirectUrl" id="redirectUrl" placeholder="Paste the destination URL" required />
         </label>
-        <input type="submit" value="Shorten">
+        <input type="submit" value="Shorten" />
     </form>
-    <br>
-    <h1>User Panel</h1>
+
+    <h1><i class="fas fa-user-cog icon"></i> User Panel</h1>
+
     <form action="/users" method="get">
-        <label id="username"> Username:
-            <input type="text" name="username">
+        <label for="panelUsername"><i class="fas fa-user icon"></i> Username:
+            <input type="text" name="username" id="panelUsername" placeholder="Enter your username" required />
         </label>
-        <input type="submit" value="Go to User Panel">
+        <input type="submit" value="Go to User Panel" />
     </form>
+
 </body>
 </html>

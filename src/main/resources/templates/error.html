@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 {#include header /}
-<body hx-boost="true">
-    <h1>( 0 _ 0 )</h1>
-    <h1>Something failed!</h1>
-    <br>
-    <p>Either the username is not correct or the link is not valid please go back and try again.</p>
-    <br>
-    <a href="/" class="button">Back</a>
+<body class="error-page" hx-boost="true">
+
+    <div class="error-container">
+        <h1 class="emoji">( 0 _ 0 )</h1>
+        <h2>Something went wrong</h2>
+        <p>The username might be incorrect or the link is not valid. Please go back and try again.</p>
+        <a href="/" class="button">← Back to Home</a>
+    </div>
+
 </body>
 </html>

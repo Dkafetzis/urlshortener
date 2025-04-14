@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 {#include header /}
-<body hx-boost="true">
-    <h1>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</h1>
-    <h1>Success!!</h1>
-    <p>Generated link code is <b>{urlid}</b></p>
-    <p>The full url is: <a id="fullurl" href="/{urlid}" hx-boost="false">loading...</a></p>
-    <br>
-    <a href="/" class="button">Back</a>
+<body class="success-page" hx-boost="true">
+
+    <div class="success-container">
+        <h1 class="emoji success"> (ﾉ◕ヮ◕)ﾉ*:・ﾟ✧ </h1>
+        <h2>Success!</h2>
+        <p>Generated link code is <strong>{urlid}</strong></p>
+        <p>
+            The full URL is:
+            <a id="fullurl" href="/{urlid}" hx-boost="false" class="link-url">loading...</a>
+        </p>
+        <a href="/" class="button">← Back to Home</a>
+    </div>
+
     <script>
         const urlid = "{urlid}";
         document.getElementById("fullurl").innerHTML = window.location.origin + "/" + urlid;

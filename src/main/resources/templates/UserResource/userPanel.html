@@ -3,30 +3,39 @@
 {@xyz.palamari.entities.RedirectUrl url}
 {@java.util.List<xyz.palamari.entities.RedirectUrl> urls}
 {#include header /}
-<body hx-boost="true">
-    <h1>User Panel</h1>
-    <br>
-    <p>Welcome {username}!</p>
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>URL</th>
-                <th>Hits</th>
-            </tr>
-        </thead>
-        <tbody hx-confirm="Are you sure?" hx-target="closest tr" hx-swap="outerHTML">
-            {#for url in urls}
+<body class="panel-page" hx-boost="true">
+
+    <div class="panel-container">
+        <h1><i class="fas fa-user icon"></i> User Panel</h1>
+        <p class="greeting">Welcome <strong>{username}</strong>!</p>
+
+        <div class="table-wrapper">
+            <table class="styled-table">
+                <thead>
                 <tr>
-                    <td><a href="{url.id}" hx-boost="false">{url.id}</a></td>
-                    <td>{url.redirectUrl}</td>
-                    <td>{url.hits ?: 0}</td>
-                    <td><a hx-delete="/delete/{username}/{url.id}" hx-boost="false">Delete</a></td>
+                    <th>ID</th>
+                    <th>URL</th>
+                    <th>Hits</th>
+                    <th>Actions</th>
                 </tr>
-            {/for}
-        </tbody>
-    </table>
-    <br>
-    <a href="/" class="button">Back</a>
+                </thead>
+                <tbody hx-confirm="Are you sure?" hx-target="closest tr" hx-swap="outerHTML">
+                {#for url in urls}
+                    <tr>
+                        <td><a href="{url.id}" hx-boost="false" class="link-code">{url.id}</a></td>
+                        <td>{url.redirectUrl}</td>
+                        <td>{url.hits ?: 0}</td>
+                        <td>
+                            <a hx-delete="/delete/{username}/{url.id}" hx-boost="false" class="delete-link">Delete</a>
+                        </td>
+                    </tr>
+                {/for}
+                </tbody>
+            </table>
+        </div>
+
+        <a href="/" class="button">← Back to Home</a>
+    </div>
+
 </body>
 </html>
