@@ -11,6 +11,9 @@ public class UrlService {
 
     @Transactional
     public String createRedirectUrl(String username, URI redirectUrl) {
+        if (username.isEmpty()) {
+            username = "ephemeral";
+        }
         RedirectUser redirectUser = RedirectUser.find("username", username).firstResult();
         if (redirectUser != null) {
             RedirectUrl existingUrl =

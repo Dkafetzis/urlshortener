@@ -1,0 +1,1 @@
+INSERT INTO redirectuser (userid, username) VALUES ('c0357af4-973a-445f-9ced-6b12e98ae74e', 'ephemeral');

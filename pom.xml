@@ -88,6 +88,10 @@
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-scheduler</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
             <artifactId>quarkus-junit5</artifactId>
             <scope>test</scope>
         </dependency>
@@ -158,8 +162,8 @@
                 <version>${spotless.version}</version>
                 <configuration>
                     <java>
-                        <removeUnusedImports/>
-                        <palantirJavaFormat/>
+                        <removeUnusedImports />
+                        <palantirJavaFormat />
                     </java>
                 </configuration>
             </plugin>
