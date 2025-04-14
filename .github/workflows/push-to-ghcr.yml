@@ -19,7 +19,7 @@ jobs:
           ref: "production"
       - name: "Package the application"
         run: |
-          ./mvnw package -Pnative
+          ./mvnw -Pnative -Dquarkus.native.container-build=true clean package
       - name: "Build and publish a Docker image for ${{ github.repository }}"
         uses: "macbre/push-to-ghcr@v14"
         with:
