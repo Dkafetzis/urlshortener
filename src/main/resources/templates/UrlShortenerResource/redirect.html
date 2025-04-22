@@ -10,6 +10,9 @@
         <p>
             The full URL is:
             <a id="fullurl" href="/{urlid}" hx-boost="false" class="link-url">loading...</a>
+            <button id="copy-button" class="copy-button" title="Copy to clipboard">
+                <span id="copy-icon">🔗</span>
+            </button>
         </p>
         <a href="/" class="button">← Back to Home</a>
         <br>
@@ -18,9 +21,28 @@
 
     <script>
         const urlid = "{urlid}";
-        document.getElementById("fullurl").innerHTML = window.location.origin + "/" + urlid;
+        const fullUrl = window.location.origin + "/" + urlid;
+        document.getElementById("fullurl").innerHTML = fullUrl;
 
-        new QRCode(document.getElementById("qrcode"), window.location.origin + "/" + urlid);
+        new QRCode(document.getElementById("qrcode"), fullUrl);
+
+        // Copy to clipboard functionality
+        document.getElementById("copy-button").addEventListener("click", function() {
+            navigator.clipboard.writeText(fullUrl).then(function() {
+                // Success feedback
+                const copyIcon = document.getElementById("copy-icon");
+                const originalContent = copyIcon.innerHTML;
+                copyIcon.innerHTML = "✅";
+
+                // Reset after 2 seconds
+                setTimeout(function() {
+                    copyIcon.innerHTML = originalContent;
+                }, 2000);
+            }).catch(function(err) {
+                console.error('Could not copy text: ', err);
+                alert("Failed to copy URL to clipboard");
+            });
+        });
     </script>
 
     {#include footer /}

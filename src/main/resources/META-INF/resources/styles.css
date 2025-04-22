@@ -247,6 +247,35 @@ input[type="submit"]:hover {
     color: #ff7f7f;
 }
 
+/* Copy Button Styling */
+.copy-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    padding: 0.4rem 0.6rem;
+    background: linear-gradient(135deg, #4fc3f7, #2196f3);
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    vertical-align: middle;
+}
+
+.copy-button:hover {
+    background: linear-gradient(135deg, #2196f3, #1976d2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.copy-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 /* QR Code Styling */
 .qrcode-container {
     margin: 2rem auto 1rem;
