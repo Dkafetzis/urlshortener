@@ -12,11 +12,15 @@
             <a id="fullurl" href="/{urlid}" hx-boost="false" class="link-url">loading...</a>
         </p>
         <a href="/" class="button">← Back to Home</a>
+        <br>
+        <div id="qrcode" class="qrcode-container"></div>
     </div>
 
     <script>
         const urlid = "{urlid}";
         document.getElementById("fullurl").innerHTML = window.location.origin + "/" + urlid;
+
+        new QRCode(document.getElementById("qrcode"), window.location.origin + "/" + urlid);
     </script>
 
     {#include footer /}

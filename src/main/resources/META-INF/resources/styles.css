@@ -246,3 +246,19 @@ input[type="submit"]:hover {
 .delete-link:hover {
     color: #ff7f7f;
 }
+
+/* QR Code Styling */
+.qrcode-container {
+    margin: 2rem auto 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qrcode-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
