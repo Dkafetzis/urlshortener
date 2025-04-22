@@ -35,6 +35,16 @@ public class UrlService {
     }
 
     @Transactional
+    public RedirectUrl findRedirectUrl(String redirectCode) {
+        RedirectUrl redirectUrl = RedirectUrl.findById(redirectCode);
+        if (redirectUrl != null) {
+            redirectUrl.hits++;
+            redirectUrl.persist();
+        }
+        return redirectUrl;
+    }
+
+    @Transactional
     public void deleteRedirectUrl(String username, String urlid) {
         RedirectUser redirectUser = RedirectUser.find("username", username).firstResult();
         RedirectUrl url = RedirectUrl.findById(urlid);

@@ -32,12 +32,9 @@ public class UrlShortenerResource {
 
     @GET
     @Path("{redirectCode}")
-    @Transactional
     public Response redirect(String redirectCode) {
-        RedirectUrl redirectUrl = RedirectUrl.findById(redirectCode);
+        RedirectUrl redirectUrl = urlService.findRedirectUrl(redirectCode);
         if (redirectUrl != null) {
-            redirectUrl.hits++;
-            redirectUrl.persist();
             return Response.temporaryRedirect(redirectUrl.redirectUrl).build();
         } else {
             return Response.status(Response.Status.NOT_FOUND).build();
