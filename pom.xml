@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>xyz.palamari</groupId>
     <artifactId>urlshortener</artifactId>
-    <version>0.0.15</version>
+    <version>0.0.16-SNAPSHOT</version>
     <packaging>quarkus</packaging>
 
     <properties>
@@ -21,7 +21,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:Dkafetzis/urlshortener.git</developerConnection>
-        <tag>0.0.15</tag>
+        <tag>0.0.14</tag>
     </scm>
 
     <dependencyManagement>
