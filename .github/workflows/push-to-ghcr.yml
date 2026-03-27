@@ -9,19 +9,19 @@ jobs:
     runs-on: "ubuntu-24.04"
     steps:
       - name: "Setup JDK"
-        uses: "actions/setup-java@v4"
+        uses: "actions/setup-java@v5.2.0"
         with:
           distribution: "temurin"
-          java-version: "21"
+          java-version: "25"
       - name: "Checkout the production branch"
-        uses: "actions/checkout@v4"
+        uses: "actions/checkout@v6.0.2"
         with:
           ref: "production"
       - name: "Package the application"
         run: |
           ./mvnw -Pnative -Dquarkus.native.container-build=true clean package
       - name: "Build and publish a Docker image for ${{ github.repository }}"
-        uses: "macbre/push-to-ghcr@v14"
+        uses: "macbre/push-to-ghcr@v16"
         with:
           image_name: "dkafetzis/urlshortener"
           github_token: "${{ secrets.GHCR_TOKEN }}"
