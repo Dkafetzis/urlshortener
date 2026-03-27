@@ -4,6 +4,7 @@
     <groupId>xyz.palamari</groupId>
     <artifactId>urlshortener</artifactId>
     <version>0.0.14-SNAPSHOT</version>
+    <packaging>quarkus</packaging>
 
     <properties>
         <compiler-plugin.version>3.15.0</compiler-plugin.version>
@@ -92,9 +93,9 @@
             <version>1.0.2</version>
         </dependency>
         <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>qrcodejs</artifactId>
-            <version>2015.11.25-04f46c6</version>
+            <groupId>org.webjars.npm</groupId>
+            <artifactId>easyqrcodejs</artifactId>
+            <version>4.6.1</version>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
@@ -102,7 +103,7 @@
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-junit5</artifactId>
+            <artifactId>quarkus-junit</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -124,16 +125,6 @@
                 <artifactId>quarkus-maven-plugin</artifactId>
                 <version>${quarkus.platform.version}</version>
                 <extensions>true</extensions>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>build</goal>
-                            <goal>generate-code</goal>
-                            <goal>generate-code-tests</goal>
-                            <goal>native-image-agent</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -146,6 +137,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${surefire-plugin.version}</version>
                 <configuration>
+                    <argLine>@{argLine}</argLine>
                     <systemPropertyVariables>
                         <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
                         <maven.home>${maven.home}</maven.home>
@@ -164,6 +156,7 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <argLine>@{argLine}</argLine>
                     <systemPropertyVariables>
                         <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
                         <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
@@ -204,6 +197,7 @@
                 </property>
             </activation>
             <properties>
+                <quarkus.package.jar.enabled>false</quarkus.package.jar.enabled>
                 <skipITs>false</skipITs>
                 <quarkus.native.enabled>true</quarkus.native.enabled>
             </properties>
