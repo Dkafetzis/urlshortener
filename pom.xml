@@ -93,9 +93,10 @@
             <version>1.0.2</version>
         </dependency>
         <dependency>
-            <groupId>org.webjars.npm</groupId>
+            <groupId>org.mvnpm</groupId>
             <artifactId>easyqrcodejs</artifactId>
-            <version>4.6.1</version>
+            <version>4.6.2</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>

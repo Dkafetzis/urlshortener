@@ -22,18 +22,23 @@
     <script>
         // Use a self-executing function to create a new scope and avoid variable redeclaration issues
         (function() {
-            var urlid = "{urlid}";
-            var fullUrl = window.location.origin + "/" + urlid;
+            const urlid = "{urlid}";
+            const fullUrl = window.location.origin + "/" + urlid;
             document.getElementById("fullurl").innerHTML = fullUrl;
 
-            new QRCode(document.getElementById("qrcode"), fullUrl);
+            // Options
+            const options = {
+                text: fullUrl
+            };
+
+            new QRCode(document.getElementById("qrcode"), options);
 
             // Copy to clipboard functionality
             document.getElementById("copy-button").addEventListener("click", function() {
                 navigator.clipboard.writeText(fullUrl).then(function() {
                     // Success feedback
-                    var copyIcon = document.getElementById("copy-icon");
-                    var originalContent = copyIcon.innerHTML;
+                    const copyIcon = document.getElementById("copy-icon");
+                    const originalContent = copyIcon.innerHTML;
                     copyIcon.innerHTML = "✅";
 
                     // Reset after 2 seconds
